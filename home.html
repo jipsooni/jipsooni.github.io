@@ -1,9 +1,108 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hi, I'm Lena!</h1>
-<p>If you see this message, my portfolio has not been fully deployed yet...</p>
-<p>However, there is this <a href="/yes-no-main/index.html">simple API project</a> waiting for you.</p>
 
+<head>
+     <title>Basic Web Page</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
+     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+     <link href="style.css" rel="stylesheet">
+     <link rel="stylesheet" href="toggle-switch.css">
+</head>
+
+<body>
+     <header>
+          <nav>
+               <h1>Lena Kislitcyn</h1>
+               <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+               </ul>
+          </nav>
+          <div class="controls">
+               <label class="toggle-switch">
+                    Dark Mode
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <div class="toggle-switch-border">
+                         <div class="toggle-switch-dot"></div>
+                    </div>
+               </label>
+          </div>
+     </header>
+     <section class="bio">
+          <div>
+               <h2>Hello! My name is Lena Kislitcyn. I'm an aspiring web developer.</h1>
+                    <p>I've been coding and making data visualization projects since 2018. I have experience and
+                         interest in
+                         web
+                         design (HTML, CSS & JS), programming (Python), and Natural Language Processing. In my free time
+                         I
+                         enjoy
+                         reading, doing yoga and playing video games.</p>
+                    <a class="btn" href="/yes-no-main/index.html" target="blank">See my work</a>
+          </div>
+     </section>
+     <section class="recent-work">
+          <h2>Recent Work</h2>
+          <article>
+               <div>
+                    <h3>South Korea Through Time And Space</h3>
+                    <p>Visualization of Korean historical and social data.</p>
+                    <strong>March 2021</strong>
+                    <ul>
+                         <li>Created a web-project using HTML, CSS and JS (Leaflet).</li>
+                         <li>Visualized South Korean territory development based on the changes in state borders in both
+                              Korea and neighboring states over time.</li>
+                    </ul>
+                    <a href="#" target="blank">GitHub Repo</a>
+               </div>
+               <img class="article-img"
+                    src="https://images.freeimages.com/images/large-previews/f22/seoul-plaza-south-korea-3-1447081.jpg" />
+          </article>
+          <article>
+               <div>
+                    <h3>News Classification</h3>
+                    <p>Fake news detetion on social media.</p>
+                    <strong>January 2021</strong>
+                    <ul>
+                         <li>Worked with the LIAR dataset (fact-checking by Politifact and CNN).</li>
+                         <li>Analyzed data to classify fake news using language parsing, word
+                              vectorization, and topic modelling.</li>
+                         <li>Compared performance of neural networks, decision trees and support vector machines and generated
+                              visualizations from results.</li>
+                    </ul>
+                    <a href="#" target="blank">GitHub Repository</a>
+               </div>
+               <img class="article-img" src="https://live.staticflickr.com/7034/6455194797_864fa426a4_w.jpg" />
+          </article>
+     </section>
+     <footer>
+          <ul>
+               <li>
+                    <a href="https://www.linkedin.com/in/lena-kislitcyn/">
+                         LinkedIn
+                         <span class="link-icon">
+                              <i class="fa-brands fa-linkedin"></i>
+                         </span>
+                    </a>
+               </li>
+               <li>
+                    <a href="https://github.com/jipsooni">
+                         GitHub
+                         <span class="link-icon">
+                              <i class="fa-brands fa-github"></i>
+                         </span>
+                    </a>
+               </li>
+          </ul>
+          <p class="copywright">© 2022 Lena Kislitcyn</p>
+     </footer>
+     <script src="script.js"></script>
 </body>
+
 </html>
