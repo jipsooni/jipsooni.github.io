@@ -1,18 +1,30 @@
 body {
-     color: #2d334a;
+     color: var(--primary);
      font-size: 16px;
      font-family: "Work Sans", sans-serif;
      margin: 0 auto;
      padding: 0 1rem;
-     background: #fffffe;
+     background: var(--background);
      max-width: 1024px;
      box-sizing: border-box;
      transition: color 0.5s;
      transition: background 0.5s;
+
+     --light-background: #fffffe;
+     --light-primary: #2d334a;
+     --light-link: #f7c42b;
+
+     --dark-background: #2d334a;
+     --dark-primary: #fffffe;
+     --dark-link: #f09520;
+
+     --background: var(--light-background);
+     --primary: var(--light-primary);
+     --link: var(--light-link);
    }
-   
+
    a {
-     color: #ffd803;
+     color: var(--link);
    }
    
    h1,
@@ -20,7 +32,7 @@ body {
    h3 {
      font-family: "Sora", sans-serif;
      font-weight: 700;
-     color: #272343;
+     color: var(--primary);
    }
    
    h1 {
@@ -38,7 +50,7 @@ body {
    /* separator bars */
    nav,
    section {
-     border-block-end: 1px solid #272343;
+     border-block-end: 1px solid var(--primary);
    }
    
    header nav {
@@ -61,7 +73,7 @@ body {
    
    header nav li a {
      text-decoration: none;
-     color: #253a52;
+     color: var(--primary);
    }
    
    /* container for dark-mode toggle */
@@ -105,8 +117,8 @@ body {
    a.btn {
      display: inline-flex;
      align-items: center;
-     background: #ffd803;
-     color: #272343;
+     background: var(--link);
+     color: var(--primary);
      text-decoration: none;
      padding: 0 1rem;
      height: 2.5rem;
@@ -181,7 +193,7 @@ body {
    footer a {
      display: inline-flex;
      flex-direction: column;
-     color: #253a52;
+     color: var(--primary);
      text-decoration: none;
      font-family: "Sora", sans-serif;
      font-weight: 700;
@@ -194,8 +206,8 @@ body {
    
    footer .link-icon {
      margin-block-start: 0.5rem;
-     background: #ffd803;
-     color: #272343;
+     background: var(--link);
+     color: var(--primary);
      width: 3rem;
      height: 3rem;
      border-radius: 1.5rem;
