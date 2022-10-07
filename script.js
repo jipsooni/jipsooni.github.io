@@ -1,3 +1,4 @@
+//Dark Mode
 class CssPropControl {
      constructor(element) {
           this.element = element
